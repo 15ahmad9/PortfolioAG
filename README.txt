@@ -1,17 +1,24 @@
-Liquid Glass Portfolio Template
+Liquid Glass Portfolio - Bilingual Version
 
 Files:
 - index.html
 - contact.html
 - assets/css/style.css
 - assets/js/main.js
-- assets/images/  ضع الصور هنا لاحقاً
+- assets/images/
 
-How to add your profile image:
-1. Put your image in assets/images/profile.jpg
-2. In index.html, replace the div with class profile-placeholder with:
-   <img src="assets/images/profile.jpg" alt="Ahmad Ghanem" class="profile-img">
-3. Add CSS for .profile-img if needed.
+Features:
+- Arabic / English language switcher
+- RTL / LTR support
+- Dark / Light mode
+- Responsive mobile navigation
+- Accessibility improvements: skip link, aria labels, focus states
+- Liquid glass design
+- Hero image and project images are placeholders
 
-Contact form:
-This is frontend-only. You can later connect it to PHP/MySQL, Formspree, EmailJS, or your own backend.
+How to edit translations:
+Open assets/js/main.js and edit the translations object.
+
+How to add images:
+Place your images in assets/images/ and replace the placeholder divs with img tags, for example:
+<img src="assets/images/profile.jpg" alt="Ahmad Ghanem" />

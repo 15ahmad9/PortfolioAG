@@ -838,3 +838,275 @@ textarea {
     transform: none;
   }
 }
+
+/* Skills & Experience Section */
+.skills-experience-section {
+  overflow: hidden;
+}
+
+.skills-experience-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(28px, 5vw, 70px);
+  align-items: center;
+  min-height: 620px;
+}
+
+.skills-copy {
+  max-width: 640px;
+}
+
+.skills-copy h2 {
+  color: var(--accent);
+  text-shadow: 0 0 28px color-mix(in srgb, var(--accent), transparent 68%);
+}
+
+.skills-copy p + p {
+  margin-top: 14px;
+}
+
+.experience-points {
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.experience-point {
+  padding: 16px 18px;
+  border: 1px solid var(--glass-border);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.experience-point strong,
+.experience-point span {
+  display: block;
+}
+
+.experience-point strong {
+  margin-bottom: 4px;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.experience-point span {
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.skills-orbit {
+  position: relative;
+  min-height: 530px;
+  padding: 28px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.skills-orbit::before,
+.skills-orbit::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.skills-orbit::before {
+  width: 330px;
+  height: 330px;
+  top: 13%;
+  right: 22%;
+  border: 1px solid color-mix(in srgb, var(--accent), transparent 78%);
+  box-shadow: inset 0 0 80px color-mix(in srgb, var(--accent), transparent 90%);
+}
+
+.skills-orbit::after {
+  width: 180px;
+  height: 180px;
+  left: 13%;
+  bottom: 16%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent), transparent 78%), transparent 68%);
+  filter: blur(10px);
+}
+
+.skill-word {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: 0 0 20px color-mix(in srgb, var(--accent), transparent 48%);
+  opacity: 0.92;
+  animation: floatSkill 7s ease-in-out infinite;
+  transform: translate3d(0, 0, 0);
+  white-space: nowrap;
+}
+
+.skill-word:nth-child(odd) {
+  animation-duration: 8.5s;
+}
+
+.skill-word:nth-child(even) {
+  animation-duration: 6.5s;
+  animation-direction: reverse;
+}
+
+.word-main { top: 47%; right: 34%; font-size: clamp(2rem, 4vw, 4.1rem); }
+.word-1 { top: 18%; right: 14%; font-size: clamp(1.25rem, 2.4vw, 2.1rem); }
+.word-2 { top: 30%; right: 45%; font-size: clamp(1.15rem, 2vw, 1.7rem); }
+.word-3 { top: 64%; right: 20%; font-size: clamp(1.25rem, 2.3vw, 2rem); }
+.word-4 { top: 74%; right: 47%; font-size: clamp(1rem, 1.8vw, 1.4rem); }
+.word-5 { top: 15%; left: 24%; font-size: clamp(0.9rem, 1.4vw, 1.15rem); opacity: 0.7; }
+.word-6 { top: 38%; left: 14%; font-size: clamp(1.05rem, 1.8vw, 1.45rem); }
+.word-7 { top: 54%; left: 30%; font-size: clamp(0.9rem, 1.4vw, 1.1rem); opacity: 0.65; }
+.word-8 { bottom: 18%; left: 16%; font-size: clamp(1rem, 1.6vw, 1.35rem); }
+.word-9 { bottom: 34%; right: 10%; font-size: clamp(0.95rem, 1.5vw, 1.2rem); opacity: 0.68; }
+.word-10 { top: 28%; left: 36%; font-size: clamp(0.95rem, 1.5vw, 1.25rem); opacity: 0.72; }
+.word-11 { bottom: 12%; right: 12%; font-size: clamp(1rem, 1.7vw, 1.4rem); }
+.word-12 { top: 10%; left: 10%; font-size: clamp(1.05rem, 1.8vw, 1.5rem); }
+.word-13 { top: 44%; right: 8%; font-size: clamp(0.9rem, 1.3vw, 1.05rem); opacity: 0.55; }
+.word-14 { top: 58%; left: 8%; font-size: clamp(0.9rem, 1.3vw, 1.05rem); opacity: 0.6; }
+.word-15 { bottom: 9%; left: 38%; font-size: clamp(0.95rem, 1.5vw, 1.18rem); opacity: 0.7; }
+
+@keyframes floatSkill {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-13px) scale(1.04);
+  }
+}
+
+@media (max-width: 980px) {
+  .skills-experience-grid {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .skills-orbit {
+    min-height: 460px;
+  }
+}
+
+@media (max-width: 760px) {
+  .skills-orbit {
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 22px;
+  }
+
+  .skills-orbit::before,
+  .skills-orbit::after {
+    display: none;
+  }
+
+  .skill-word,
+  .word-main,
+  .word-1,
+  .word-2,
+  .word-3,
+  .word-4,
+  .word-5,
+  .word-6,
+  .word-7,
+  .word-8,
+  .word-9,
+  .word-10,
+  .word-11,
+  .word-12,
+  .word-13,
+  .word-14,
+  .word-15 {
+    position: static;
+    padding: 9px 13px;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    font-size: 0.95rem;
+    opacity: 1;
+    animation: none;
+    text-shadow: none;
+  }
+}
+
+/* Language switcher */
+.nav-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.language-toggle {
+  min-width: 48px;
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  color: var(--text);
+  background: var(--glass);
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  transition: transform var(--transition), background var(--transition), border-color var(--transition);
+}
+
+.language-toggle:hover,
+.theme-toggle:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+html[dir="ltr"] body {
+  text-align: left;
+}
+
+html[dir="rtl"] body {
+  text-align: right;
+}
+
+html[dir="ltr"] .hero-actions,
+html[dir="ltr"] .hero-stats,
+html[dir="ltr"] .skills-list,
+html[dir="ltr"] .tags,
+html[dir="ltr"] .footer-links,
+html[dir="ltr"] .nav-actions {
+  direction: ltr;
+}
+
+html[dir="rtl"] .hero-actions,
+html[dir="rtl"] .hero-stats,
+html[dir="rtl"] .skills-list,
+html[dir="rtl"] .tags,
+html[dir="rtl"] .footer-links,
+html[dir="rtl"] .nav-actions {
+  direction: rtl;
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    gap: 10px;
+  }
+
+  .nav-actions {
+    gap: 7px;
+  }
+
+  .language-toggle,
+  .theme-toggle {
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+    padding: 0;
+  }
+
+  .logo-text {
+    display: none;
+  }
+}

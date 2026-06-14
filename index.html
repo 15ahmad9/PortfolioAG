@@ -3,47 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio احترافي لمبرمج ومطور مواقع" />
-  <title>Ahmad Ghanem | Web Developer Portfolio</title>
-
+  <meta name="description" data-i18n-content="meta.description" content="Portfolio احترافي لمبرمج ومطور مواقع" />
+  <title data-i18n-title="page.indexTitle">Ahmad Ghanem | Web Developer Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <a href="#main" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
-
-  <div class="bg-shapes" aria-hidden="true">
-    <span class="shape shape-one"></span>
-    <span class="shape shape-two"></span>
-    <span class="shape shape-three"></span>
-  </div>
+  <a href="#main" class="skip-link" data-i18n="common.skip">تخطي إلى المحتوى الرئيسي</a>
+  <div class="bg-shapes" aria-hidden="true"><span class="shape shape-one"></span><span class="shape shape-two"></span><span class="shape shape-three"></span></div>
 
   <header class="site-header" id="top">
-    <nav class="navbar container" aria-label="القائمة الرئيسية">
-      <a href="index.html" class="logo" aria-label="الانتقال إلى الصفحة الرئيسية">
-        <span class="logo-mark">AG</span>
-        <span class="logo-text">Portfolio</span>
+    <nav class="navbar container" aria-label="القائمة الرئيسية" data-i18n-aria-label="nav.aria">
+      <a href="index.html" class="logo" aria-label="الانتقال إلى الصفحة الرئيسية" data-i18n-aria-label="nav.homeAria">
+        <span class="logo-mark">AG</span><span class="logo-text">Portfolio</span>
       </a>
-
-      <button class="nav-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navMenu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
+      <button class="nav-toggle" type="button" aria-label="فتح القائمة" data-i18n-aria-label="nav.open" aria-expanded="false" aria-controls="navMenu"><span></span><span></span><span></span></button>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#home" class="nav-link active">الرئيسية</a></li>
-        <li><a href="#about" class="nav-link">من أنا</a></li>
-        <li><a href="#projects" class="nav-link">المشاريع</a></li>
-        <li><a href="#services" class="nav-link">الخدمات</a></li>
-        <li><a href="contact.html" class="nav-link">تواصل معي</a></li>
+        <li><a href="#home" class="nav-link active" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a href="#about" class="nav-link" data-i18n="nav.about">من أنا</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">المهارات</a></li>
+        <li><a href="#projects" class="nav-link" data-i18n="nav.projects">المشاريع</a></li>
+        <li><a href="#services" class="nav-link" data-i18n="nav.services">الخدمات</a></li>
+        <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">تواصل معي</a></li>
       </ul>
-
-      <button class="theme-toggle" type="button" aria-label="تبديل الوضع الليلي والنهاري">
-        <span class="theme-icon">☾</span>
-      </button>
+      <div class="nav-actions">
+        <button class="language-toggle" type="button" aria-label="Switch language" data-i18n-aria-label="common.switchLanguage"><span class="language-label">EN</span></button>
+        <button class="theme-toggle" type="button" aria-label="تبديل الوضع الليلي والنهاري" data-i18n-aria-label="common.switchTheme"><span class="theme-icon">☾</span></button>
+      </div>
     </nav>
   </header>
 
@@ -51,199 +39,68 @@
     <section class="hero section" id="home">
       <div class="container hero-grid">
         <div class="hero-content glass-card reveal">
-          <span class="eyebrow">Software Engineer & Web Developer</span>
-          <h1>أبني مواقع احترافية بتصميم عصري وتجربة استخدام عالية.</h1>
-          <p>
-            أنا أحمد غانم، مطور مواقع أعمل على بناء واجهات متجاوبة، مواقع أعمال، لوحات تحكم، وأنظمة ويب عملية باستخدام HTML, CSS, JavaScript, PHP و MySQL.
-          </p>
-
+          <span class="eyebrow" data-i18n="hero.eyebrow">Software Engineer & Web Developer</span>
+          <h1 data-i18n="hero.title">أبني مواقع احترافية بتصميم عصري وتجربة استخدام عالية.</h1>
+          <p data-i18n="hero.text">أنا أحمد غانم، مطور مواقع أعمل على بناء واجهات متجاوبة، مواقع أعمال، لوحات تحكم، وأنظمة ويب عملية باستخدام HTML, CSS, JavaScript, PHP و MySQL.</p>
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">شاهد مشاريعي</a>
-            <a href="contact.html" class="btn btn-outline">تواصل معي</a>
+            <a href="#projects" class="btn btn-primary" data-i18n="hero.projectsBtn">شاهد مشاريعي</a>
+            <a href="contact.html" class="btn btn-outline" data-i18n="hero.contactBtn">تواصل معي</a>
           </div>
-
-          <div class="hero-stats" aria-label="إحصائيات مختصرة">
-            <div>
-              <strong>+10</strong>
-              <span>مشاريع</span>
-            </div>
-            <div>
-              <strong>+5</strong>
-              <span>خدمات</span>
-            </div>
-            <div>
-              <strong>100%</strong>
-              <span>Responsive</span>
-            </div>
+          <div class="hero-stats" aria-label="إحصائيات مختصرة" data-i18n-aria-label="hero.statsAria">
+            <div><strong>+10</strong><span data-i18n="hero.statProjects">مشاريع</span></div>
+            <div><strong>+5</strong><span data-i18n="hero.statServices">خدمات</span></div>
+            <div><strong>100%</strong><span>Responsive</span></div>
           </div>
         </div>
-
-        <div class="hero-image-wrap reveal">
-          <div class="image-placeholder profile-placeholder" role="img" aria-label="مكان صورة شخصية سيتم إضافتها لاحقاً">
-            <span>ضع صورتك هنا</span>
-          </div>
-        </div>
+        <div class="hero-image-wrap reveal"><div class="image-placeholder profile-placeholder" role="img" aria-label="مكان صورة شخصية سيتم إضافتها لاحقاً" data-i18n-aria-label="hero.imageAria"><span data-i18n="hero.imagePlaceholder">ضع صورتك هنا</span></div></div>
       </div>
     </section>
 
     <section class="section" id="about">
       <div class="container about-grid">
-        <div class="section-head reveal">
-          <span class="eyebrow">About Me</span>
-          <h2>من أنا؟</h2>
-        </div>
+        <div class="section-head reveal"><span class="eyebrow" data-i18n="about.eyebrow">About Me</span><h2 data-i18n="about.title">من أنا؟</h2></div>
+        <div class="glass-card about-card reveal"><p data-i18n="about.text">مطور مواقع أركز على كتابة كود نظيف، تصميم واضح، وسرعة تحميل جيدة. أستطيع بناء صفحات تعريفية، مواقع شركات، أنظمة حجز، ولوحات تحكم قابلة للإدارة والتطوير.</p><div class="skills-list" aria-label="المهارات التقنية" data-i18n-aria-label="about.skillsAria"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Responsive Design</span><span>UI/UX</span><span>Accessibility</span></div></div>
+      </div>
+    </section>
 
-        <div class="glass-card about-card reveal">
-          <p>
-            مطور مواقع أركز على كتابة كود نظيف، تصميم واضح، وسرعة تحميل جيدة. أستطيع بناء صفحات تعريفية، مواقع شركات، أنظمة حجز، ولوحات تحكم قابلة للإدارة والتطوير.
-          </p>
-          <div class="skills-list" aria-label="المهارات التقنية">
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
-            <span>PHP</span>
-            <span>MySQL</span>
-            <span>Responsive Design</span>
-            <span>UI/UX</span>
-            <span>Accessibility</span>
+    <section class="section skills-experience-section" id="skills">
+      <div class="container skills-experience-grid">
+        <div class="skills-copy reveal">
+          <span class="eyebrow" data-i18n="skills.eyebrow">Skills & Experience</span>
+          <h2 data-i18n="skills.title">المهارات والخبرات</h2>
+          <p data-i18n="skills.text1">أمتلك خبرة عملية في تطوير واجهات الويب وبناء مواقع ديناميكية متجاوبة، مع التركيز على كتابة كود نظيف، أداء سريع، وتجربة استخدام واضحة.</p>
+          <p data-i18n="skills.text2">أعمل على تحويل الأفكار إلى مواقع حقيقية باستخدام تقنيات Frontend و Backend، وأستطيع بناء صفحات تعريفية، أنظمة حجز، لوحات تحكم، ونماذج تواصل قابلة للتطوير.</p>
+          <div class="experience-points" aria-label="ملخص الخبرات" data-i18n-aria-label="skills.expAria">
+            <div class="experience-point"><strong>Frontend</strong><span>HTML, CSS, JavaScript, Responsive Design</span></div>
+            <div class="experience-point"><strong>Backend</strong><span>PHP, MySQL, PDO, Authentication, CRUD</span></div>
+            <div class="experience-point"><strong>Workflow</strong><span>GitHub, VS Code, XAMPP, UI/UX Basics</span></div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">My Projects</span>
-          <h2>المشاريع التي بنيتها</h2>
-          <p>يمكنك تعديل أسماء المشاريع والصور والروابط لاحقاً حسب أعمالك الفعلية.</p>
-        </div>
-
-        <div class="cards-grid projects-grid">
-          <article class="project-card glass-card reveal">
-            <div class="image-placeholder project-image" role="img" aria-label="مكان صورة مشروع">
-              <span>صورة المشروع</span>
-            </div>
-            <div class="card-body">
-              <h3>Salon Booking System</h3>
-              <p>نظام حجز صالونات يحتوي على تسجيل دخول، خدمات، مواعيد، ولوحة تحكم للإدارة.</p>
-              <div class="tags">
-                <span>PHP</span>
-                <span>MySQL</span>
-                <span>CSS</span>
-              </div>
-              <a href="#" class="text-link" aria-label="عرض تفاصيل مشروع Salon Booking System">عرض المشروع</a>
-            </div>
-          </article>
-
-          <article class="project-card glass-card reveal">
-            <div class="image-placeholder project-image" role="img" aria-label="مكان صورة مشروع">
-              <span>صورة المشروع</span>
-            </div>
-            <div class="card-body">
-              <h3>Company Website</h3>
-              <p>موقع شركة مع إعلانات، أعضاء الفريق، رسائل تواصل، وصلاحيات Admin / Editor.</p>
-              <div class="tags">
-                <span>HTML</span>
-                <span>PHP</span>
-                <span>Admin Panel</span>
-              </div>
-              <a href="#" class="text-link" aria-label="عرض تفاصيل مشروع Company Website">عرض المشروع</a>
-            </div>
-          </article>
-
-          <article class="project-card glass-card reveal">
-            <div class="image-placeholder project-image" role="img" aria-label="مكان صورة مشروع">
-              <span>صورة المشروع</span>
-            </div>
-            <div class="card-body">
-              <h3>Portfolio Website</h3>
-              <p>موقع شخصي احترافي لعرض المهارات، المشاريع، الخدمات، ومعلومات التواصل.</p>
-              <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </div>
-              <a href="#" class="text-link" aria-label="عرض تفاصيل مشروع Portfolio Website">عرض المشروع</a>
-            </div>
-          </article>
+        <div class="skills-orbit glass-card reveal" aria-label="قائمة مهارات تقنية" data-i18n-aria-label="skills.orbitAria">
+          <span class="skill-word word-main">HTML5</span><span class="skill-word word-1">CSS3</span><span class="skill-word word-2">JavaScript</span><span class="skill-word word-3">PHP</span><span class="skill-word word-4">MySQL</span><span class="skill-word word-5">Bootstrap</span><span class="skill-word word-6">Responsive</span><span class="skill-word word-7">UI/UX</span><span class="skill-word word-8">GitHub</span><span class="skill-word word-9">PDO</span><span class="skill-word word-10">Admin Panel</span><span class="skill-word word-11">Accessibility</span><span class="skill-word word-12">JSON</span><span class="skill-word word-13">SEO</span><span class="skill-word word-14">Forms</span><span class="skill-word word-15">Security</span>
         </div>
       </div>
     </section>
 
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">Services</span>
-          <h2>الخدمات التي أقدمها</h2>
-          <p>خدمات تطوير ويب مناسبة للأفراد، الشركات، والمتاجر الناشئة.</p>
-        </div>
+    <section class="section" id="projects"><div class="container"><div class="section-head center reveal"><span class="eyebrow" data-i18n="projects.eyebrow">My Projects</span><h2 data-i18n="projects.title">المشاريع التي بنيتها</h2><p data-i18n="projects.subtitle">يمكنك تعديل أسماء المشاريع والصور والروابط لاحقاً حسب أعمالك الفعلية.</p></div>
+      <div class="cards-grid projects-grid">
+        <article class="project-card glass-card reveal"><div class="image-placeholder project-image" role="img" aria-label="مكان صورة مشروع" data-i18n-aria-label="projects.imageAria"><span data-i18n="projects.imagePlaceholder">صورة المشروع</span></div><div class="card-body"><h3>Salon Booking System</h3><p data-i18n="projects.p1">نظام حجز صالونات يحتوي على تسجيل دخول، خدمات، مواعيد، ولوحة تحكم للإدارة.</p><div class="tags"><span>PHP</span><span>MySQL</span><span>CSS</span></div><a href="#" class="text-link" data-i18n="projects.view">عرض المشروع</a></div></article>
+        <article class="project-card glass-card reveal"><div class="image-placeholder project-image" role="img" aria-label="مكان صورة مشروع" data-i18n-aria-label="projects.imageAria"><span data-i18n="projects.imagePlaceholder">صورة المشروع</span></div><div class="card-body"><h3>Company Website</h3><p data-i18n="projects.p2">موقع شركة مع إعلانات، أعضاء الفريق، رسائل تواصل، وصلاحيات Admin / Editor.</p><div class="tags"><span>HTML</span><span>PHP</span><span>Admin Panel</span></div><a href="#" class="text-link" data-i18n="projects.view">عرض المشروع</a></div></article>
+        <article class="project-card glass-card reveal"><div class="image-placeholder project-image" role="img" aria-label="مكان صورة مشروع" data-i18n-aria-label="projects.imageAria"><span data-i18n="projects.imagePlaceholder">صورة المشروع</span></div><div class="card-body"><h3>Portfolio Website</h3><p data-i18n="projects.p3">موقع شخصي احترافي لعرض المهارات، المشاريع، الخدمات، ومعلومات التواصل.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a href="#" class="text-link" data-i18n="projects.view">عرض المشروع</a></div></article>
+      </div></div></section>
 
-        <div class="cards-grid services-grid">
-          <article class="service-card glass-card reveal">
-            <div class="service-icon" aria-hidden="true">✦</div>
-            <h3>تصميم مواقع تعريفية</h3>
-            <p>تصميم صفحات احترافية للشركات والأشخاص مع تجربة استخدام واضحة ومتجاوبة.</p>
-          </article>
+    <section class="section" id="services"><div class="container"><div class="section-head center reveal"><span class="eyebrow" data-i18n="services.eyebrow">Services</span><h2 data-i18n="services.title">الخدمات التي أقدمها</h2><p data-i18n="services.subtitle">خدمات تطوير ويب مناسبة للأفراد، الشركات، والمتاجر الناشئة.</p></div>
+      <div class="cards-grid services-grid">
+        <article class="service-card glass-card reveal"><div class="service-icon" aria-hidden="true">✦</div><h3 data-i18n="services.s1Title">تصميم مواقع تعريفية</h3><p data-i18n="services.s1Text">تصميم صفحات احترافية للشركات والأشخاص مع تجربة استخدام واضحة ومتجاوبة.</p></article>
+        <article class="service-card glass-card reveal"><div class="service-icon" aria-hidden="true">⌘</div><h3 data-i18n="services.s2Title">تطوير Frontend</h3><p data-i18n="services.s2Text">تحويل التصاميم إلى صفحات HTML/CSS/JS متوافقة مع جميع الشاشات.</p></article>
+        <article class="service-card glass-card reveal"><div class="service-icon" aria-hidden="true">◇</div><h3 data-i18n="services.s3Title">برمجة Backend</h3><p data-i18n="services.s3Text">بناء وظائف ديناميكية مثل تسجيل الدخول، قواعد البيانات، النماذج، ولوحات التحكم.</p></article>
+        <article class="service-card glass-card reveal"><div class="service-icon" aria-hidden="true">▣</div><h3 data-i18n="services.s4Title">لوحات تحكم</h3><p data-i18n="services.s4Text">إنشاء Admin Panel لإدارة المحتوى، المستخدمين، الرسائل، والمشاريع بسهولة.</p></article>
+      </div></div></section>
 
-          <article class="service-card glass-card reveal">
-            <div class="service-icon" aria-hidden="true">⌘</div>
-            <h3>تطوير Frontend</h3>
-            <p>تحويل التصاميم إلى صفحات HTML/CSS/JS متوافقة مع جميع الشاشات.</p>
-          </article>
-
-          <article class="service-card glass-card reveal">
-            <div class="service-icon" aria-hidden="true">◇</div>
-            <h3>برمجة Backend</h3>
-            <p>بناء وظائف ديناميكية مثل تسجيل الدخول، قواعد البيانات، النماذج، ولوحات التحكم.</p>
-          </article>
-
-          <article class="service-card glass-card reveal">
-            <div class="service-icon" aria-hidden="true">▣</div>
-            <h3>لوحات تحكم</h3>
-            <p>إنشاء Admin Panel لإدارة المحتوى، المستخدمين، الرسائل، والمشاريع بسهولة.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section cta-section">
-      <div class="container">
-        <div class="cta-card glass-card reveal">
-          <div>
-            <span class="eyebrow">Let’s Work Together</span>
-            <h2>هل لديك فكرة موقع؟</h2>
-            <p>أستطيع مساعدتك في تحويل فكرتك إلى موقع احترافي، سريع، ومتجاوب.</p>
-          </div>
-          <a href="contact.html" class="btn btn-primary">ابدأ مشروعك</a>
-        </div>
-      </div>
-    </section>
+    <section class="section cta-section"><div class="container"><div class="cta-card glass-card reveal"><div><span class="eyebrow" data-i18n="cta.eyebrow">Let’s Work Together</span><h2 data-i18n="cta.title">هل لديك فكرة موقع؟</h2><p data-i18n="cta.text">أستطيع مساعدتك في تحويل فكرتك إلى موقع احترافي، سريع، ومتجاوب.</p></div><a href="contact.html" class="btn btn-primary" data-i18n="cta.btn">ابدأ مشروعك</a></div></div></section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <a href="index.html" class="logo footer-logo">
-          <span class="logo-mark">AG</span>
-          <span class="logo-text">Portfolio</span>
-        </a>
-        <p>Portfolio شخصي بتصميم Liquid Glass لعرض المشاريع والخدمات بشكل احترافي.</p>
-      </div>
-
-      <div class="footer-links">
-        <a href="#home">الرئيسية</a>
-        <a href="#projects">المشاريع</a>
-        <a href="#services">الخدمات</a>
-        <a href="contact.html">تواصل معي</a>
-      </div>
-    </div>
-
-    <div class="footer-bottom container">
-      <p>© <span id="year"></span> Ahmad Ghanem. All Rights Reserved.</p>
-    </div>
-  </footer>
-
+  <footer class="footer"><div class="container footer-grid"><div><a href="index.html" class="logo footer-logo"><span class="logo-mark">AG</span><span class="logo-text">Portfolio</span></a><p data-i18n="footer.text">Portfolio شخصي بتصميم Liquid Glass لعرض المشاريع والخدمات بشكل احترافي.</p></div><div class="footer-links"><a href="#home" data-i18n="nav.home">الرئيسية</a><a href="#skills" data-i18n="nav.skills">المهارات</a><a href="#projects" data-i18n="nav.projects">المشاريع</a><a href="#services" data-i18n="nav.services">الخدمات</a><a href="contact.html" data-i18n="nav.contact">تواصل معي</a></div></div><div class="footer-bottom container"><p>© <span id="year"></span> Ahmad Ghanem. All Rights Reserved.</p></div></footer>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

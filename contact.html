@@ -3,140 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="تواصل مع أحمد غانم لتطوير مواقع الويب" />
-  <title>تواصل معي | Ahmad Ghanem</title>
-
+  <meta name="description" data-i18n-content="meta.contactDescription" content="تواصل مع أحمد غانم لتطوير مواقع الويب" />
+  <title data-i18n-title="page.contactTitle">تواصل معي | Ahmad Ghanem</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <a href="#main" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
-
-  <div class="bg-shapes" aria-hidden="true">
-    <span class="shape shape-one"></span>
-    <span class="shape shape-two"></span>
-    <span class="shape shape-three"></span>
-  </div>
-
-  <header class="site-header" id="top">
-    <nav class="navbar container" aria-label="القائمة الرئيسية">
-      <a href="index.html" class="logo" aria-label="الانتقال إلى الصفحة الرئيسية">
-        <span class="logo-mark">AG</span>
-        <span class="logo-text">Portfolio</span>
-      </a>
-
-      <button class="nav-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navMenu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html#home" class="nav-link">الرئيسية</a></li>
-        <li><a href="index.html#about" class="nav-link">من أنا</a></li>
-        <li><a href="index.html#projects" class="nav-link">المشاريع</a></li>
-        <li><a href="index.html#services" class="nav-link">الخدمات</a></li>
-        <li><a href="contact.html" class="nav-link active">تواصل معي</a></li>
-      </ul>
-
-      <button class="theme-toggle" type="button" aria-label="تبديل الوضع الليلي والنهاري">
-        <span class="theme-icon">☾</span>
-      </button>
-    </nav>
-  </header>
-
-  <main id="main">
-    <section class="section contact-hero">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">Contact Me</span>
-          <h1>تواصل معي</h1>
-          <p>املأ النموذج التالي أو استخدم معلومات التواصل المباشرة.</p>
-        </div>
-
-        <div class="contact-grid">
-          <form class="contact-form glass-card reveal" action="#" method="post" novalidate>
-            <div class="form-group">
-              <label for="name">الاسم الكامل</label>
-              <input type="text" id="name" name="name" placeholder="اكتب اسمك" required />
-              <small class="error-message">الرجاء إدخال الاسم.</small>
-            </div>
-
-            <div class="form-group">
-              <label for="email">البريد الإلكتروني</label>
-              <input type="email" id="email" name="email" placeholder="example@email.com" required />
-              <small class="error-message">الرجاء إدخال بريد إلكتروني صحيح.</small>
-            </div>
-
-            <div class="form-group">
-              <label for="subject">الموضوع</label>
-              <input type="text" id="subject" name="subject" placeholder="مثال: تصميم موقع شركة" required />
-              <small class="error-message">الرجاء إدخال الموضوع.</small>
-            </div>
-
-            <div class="form-group">
-              <label for="message">الرسالة</label>
-              <textarea id="message" name="message" rows="6" placeholder="اكتب تفاصيل مشروعك أو استفسارك" required></textarea>
-              <small class="error-message">الرجاء إدخال الرسالة.</small>
-            </div>
-
-            <button class="btn btn-primary" type="submit">إرسال الرسالة</button>
-            <p class="form-note">هذا النموذج Frontend فقط. يمكن ربطه لاحقاً بـ PHP أو خدمة بريد.</p>
-          </form>
-
-          <aside class="contact-info glass-card reveal" aria-label="معلومات التواصل">
-            <h2>معلومات التواصل</h2>
-            <p>يمكنك تعديل البيانات التالية ووضع بريدك وروابط حساباتك.</p>
-
-            <ul class="info-list">
-              <li>
-                <span>البريد الإلكتروني</span>
-                <a href="mailto:your-email@example.com">your-email@example.com</a>
-              </li>
-              <li>
-                <span>رقم الهاتف</span>
-                <a href="tel:+962000000000">+962 00 000 0000</a>
-              </li>
-              <li>
-                <span>LinkedIn</span>
-                <a href="#">ضع رابط LinkedIn هنا</a>
-              </li>
-              <li>
-                <span>GitHub</span>
-                <a href="#">ضع رابط GitHub هنا</a>
-              </li>
-            </ul>
-          </aside>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <a href="index.html" class="logo footer-logo">
-          <span class="logo-mark">AG</span>
-          <span class="logo-text">Portfolio</span>
-        </a>
-        <p>Portfolio شخصي بتصميم Liquid Glass لعرض المشاريع والخدمات بشكل احترافي.</p>
-      </div>
-
-      <div class="footer-links">
-        <a href="index.html#home">الرئيسية</a>
-        <a href="index.html#projects">المشاريع</a>
-        <a href="index.html#services">الخدمات</a>
-        <a href="contact.html">تواصل معي</a>
-      </div>
-    </div>
-
-    <div class="footer-bottom container">
-      <p>© <span id="year"></span> Ahmad Ghanem. All Rights Reserved.</p>
-    </div>
-  </footer>
-
+  <a href="#main" class="skip-link" data-i18n="common.skip">تخطي إلى المحتوى الرئيسي</a>
+  <div class="bg-shapes" aria-hidden="true"><span class="shape shape-one"></span><span class="shape shape-two"></span><span class="shape shape-three"></span></div>
+  <header class="site-header" id="top"><nav class="navbar container" aria-label="القائمة الرئيسية" data-i18n-aria-label="nav.aria"><a href="index.html" class="logo" aria-label="الانتقال إلى الصفحة الرئيسية" data-i18n-aria-label="nav.homeAria"><span class="logo-mark">AG</span><span class="logo-text">Portfolio</span></a><button class="nav-toggle" type="button" aria-label="فتح القائمة" data-i18n-aria-label="nav.open" aria-expanded="false" aria-controls="navMenu"><span></span><span></span><span></span></button><ul class="nav-menu" id="navMenu"><li><a href="index.html#home" class="nav-link" data-i18n="nav.home">الرئيسية</a></li><li><a href="index.html#about" class="nav-link" data-i18n="nav.about">من أنا</a></li><li><a href="index.html#skills" class="nav-link" data-i18n="nav.skills">المهارات</a></li><li><a href="index.html#projects" class="nav-link" data-i18n="nav.projects">المشاريع</a></li><li><a href="index.html#services" class="nav-link" data-i18n="nav.services">الخدمات</a></li><li><a href="contact.html" class="nav-link active" data-i18n="nav.contact">تواصل معي</a></li></ul><div class="nav-actions"><button class="language-toggle" type="button" aria-label="Switch language" data-i18n-aria-label="common.switchLanguage"><span class="language-label">EN</span></button><button class="theme-toggle" type="button" aria-label="تبديل الوضع الليلي والنهاري" data-i18n-aria-label="common.switchTheme"><span class="theme-icon">☾</span></button></div></nav></header>
+  <main id="main"><section class="section contact-hero"><div class="container"><div class="section-head center reveal"><span class="eyebrow" data-i18n="contact.eyebrow">Contact Me</span><h1 data-i18n="contact.title">تواصل معي</h1><p data-i18n="contact.subtitle">املأ النموذج التالي أو استخدم معلومات التواصل المباشرة.</p></div><div class="contact-grid"><form class="contact-form glass-card reveal" action="#" method="post" novalidate><div class="form-group"><label for="name" data-i18n="contact.name">الاسم الكامل</label><input type="text" id="name" name="name" placeholder="اكتب اسمك" data-i18n-placeholder="contact.namePlaceholder" required /><small class="error-message" data-i18n="contact.nameError">الرجاء إدخال الاسم.</small></div><div class="form-group"><label for="email" data-i18n="contact.email">البريد الإلكتروني</label><input type="email" id="email" name="email" placeholder="example@email.com" required /><small class="error-message" data-i18n="contact.emailError">الرجاء إدخال بريد إلكتروني صحيح.</small></div><div class="form-group"><label for="subject" data-i18n="contact.subject">الموضوع</label><input type="text" id="subject" name="subject" placeholder="مثال: تصميم موقع شركة" data-i18n-placeholder="contact.subjectPlaceholder" required /><small class="error-message" data-i18n="contact.subjectError">الرجاء إدخال الموضوع.</small></div><div class="form-group"><label for="message" data-i18n="contact.message">الرسالة</label><textarea id="message" name="message" rows="6" placeholder="اكتب تفاصيل مشروعك أو استفسارك" data-i18n-placeholder="contact.messagePlaceholder" required></textarea><small class="error-message" data-i18n="contact.messageError">الرجاء إدخال الرسالة.</small></div><button class="btn btn-primary" type="submit" data-i18n="contact.send">إرسال الرسالة</button><p class="form-note" data-i18n="contact.note">هذا النموذج Frontend فقط. يمكن ربطه لاحقاً بـ PHP أو خدمة بريد.</p></form><aside class="contact-info glass-card reveal" aria-label="معلومات التواصل" data-i18n-aria-label="contact.infoAria"><h2 data-i18n="contact.infoTitle">معلومات التواصل</h2><p data-i18n="contact.infoText">يمكنك تعديل البيانات التالية ووضع بريدك وروابط حساباتك.</p><ul class="info-list"><li><span data-i18n="contact.emailLabel">البريد الإلكتروني</span><a href="mailto:your-email@example.com">your-email@example.com</a></li><li><span data-i18n="contact.phoneLabel">رقم الهاتف</span><a href="tel:+962000000000">+962 00 000 0000</a></li><li><span>LinkedIn</span><a href="#" data-i18n="contact.linkedin">ضع رابط LinkedIn هنا</a></li><li><span>GitHub</span><a href="#" data-i18n="contact.github">ضع رابط GitHub هنا</a></li></ul></aside></div></div></section></main>
+  <footer class="footer"><div class="container footer-grid"><div><a href="index.html" class="logo footer-logo"><span class="logo-mark">AG</span><span class="logo-text">Portfolio</span></a><p data-i18n="footer.text">Portfolio شخصي بتصميم Liquid Glass لعرض المشاريع والخدمات بشكل احترافي.</p></div><div class="footer-links"><a href="index.html#home" data-i18n="nav.home">الرئيسية</a><a href="index.html#skills" data-i18n="nav.skills">المهارات</a><a href="index.html#projects" data-i18n="nav.projects">المشاريع</a><a href="index.html#services" data-i18n="nav.services">الخدمات</a><a href="contact.html" data-i18n="nav.contact">تواصل معي</a></div></div><div class="footer-bottom container"><p>© <span id="year"></span> Ahmad Ghanem. All Rights Reserved.</p></div></footer>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
