@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio احترافي لمبرمج ومطور مواقع" />
+  <title>Ahmad Ghanem | Web Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
+
+  <div class="bg-shapes" aria-hidden="true">
+    <span class="shape shape-one"></span>
+    <span class="shape shape-two"></span>
+    <span class="shape shape-three"></span>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="القائمة الرئيسية">
+      <a href="index.html" class="logo" aria-label="الانتقال إلى الصفحة الرئيسية">
+        <span class="logo-mark">AG</span>
+        <span class="logo-text">Portfolio</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+        <li><a href="#about" class="nav-link">من أنا</a></li>
+        <li><a href="#projects" class="nav-link">المشاريع</a></li>
+        <li><a href="#services" class="nav-link">الخدمات</a></li>
+        <li><a href="contact.html" class="nav-link">تواصل معي</a></li>
+      </ul>
+
+      <button class="theme-toggle" type="button" aria-label="تبديل الوضع الليلي والنهاري">
+        <span class="theme-icon">☾</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content glass-card reveal">
+          <span class="eyebrow">Software Engineer & Web Developer</span>
+          <h1>أبني مواقع احترافية بتصميم عصري وتجربة استخدام عالية.</h1>
+          <p>
+            أنا أحمد غانم، مطور مواقع أعمل على بناء واجهات متجاوبة، مواقع أعمال، لوحات تحكم، وأنظمة ويب عملية باستخدام HTML, CSS, JavaScript, PHP و MySQL.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">شاهد مشاريعي</a>
+            <a href="contact.html" class="btn btn-outline">تواصل معي</a>
+          </div>
+
+          <div class="hero-stats" aria-label="إحصائيات مختصرة">
+            <div>
+              <strong>+10</strong>
+              <span>مشاريع</span>
+            </div>
+            <div>
+              <strong>+5</strong>
+              <span>خدمات</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap reveal">
+          <div class="image-placeholder profile-placeholder" role="img" aria-label="مكان صورة شخصية سيتم إضافتها لاحقاً">
+            <span>ضع صورتك هنا</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="section-head reveal">
+          <span class="eyebrow">About Me</span>
+          <h2>من أنا؟</h2>
+        </div>
+
+        <div class="glass-card about-card reveal">
+          <p>
+            مطور مواقع أركز على كتابة كود نظيف، تصميم واضح، وسرعة تحميل جيدة. أستطيع بناء صفحات تعريفية، مواقع شركات، أنظمة حجز، ولوحات تحكم قابلة للإدارة والتطوير.
+          </p>
+          <div class="skills-list" aria-label="المهارات التقنية">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>Responsive Design</span>
+            <span>UI/UX</span>
+            <span>Accessibility</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">My Projects</span>
+          <h2>المشاريع التي بنيتها</h2>
+          <p>يمكنك تعديل أسماء المشاريع والصور والروابط لاحقاً حسب أعمالك الفعلية.</p>
+        </div>
+
+        <div class="cards-grid projects-grid">
+          <article class="project-card glass-card reveal">
+            <div class="image-placeholder project-image" role="img" aria-label="مكان صورة مشروع">
+              <span>صورة المشروع</span>
+            </div>
+            <div class="card-body">
+              <h3>Salon Booking System</h3>
+              <p>نظام حجز صالونات يحتوي على تسجيل دخول، خدمات، مواعيد، ولوحة تحكم للإدارة.</p>
+              <div class="tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>CSS</span>
+              </div>
+              <a href="#" class="text-link" aria-label="عرض تفاصيل مشروع Salon Booking System">عرض المشروع</a>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="image-placeholder project-image" role="img" aria-label="مكان صورة مشروع">
+              <span>صورة المشروع</span>
+            </div>
+            <div class="card-body">
+              <h3>Company Website</h3>
+              <p>موقع شركة مع إعلانات، أعضاء الفريق، رسائل تواصل، وصلاحيات Admin / Editor.</p>
+              <div class="tags">
+                <span>HTML</span>
+                <span>PHP</span>
+                <span>Admin Panel</span>
+              </div>
+              <a href="#" class="text-link" aria-label="عرض تفاصيل مشروع Company Website">عرض المشروع</a>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="image-placeholder project-image" role="img" aria-label="مكان صورة مشروع">
+              <span>صورة المشروع</span>
+            </div>
+            <div class="card-body">
+              <h3>Portfolio Website</h3>
+              <p>موقع شخصي احترافي لعرض المهارات، المشاريع، الخدمات، ومعلومات التواصل.</p>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <a href="#" class="text-link" aria-label="عرض تفاصيل مشروع Portfolio Website">عرض المشروع</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Services</span>
+          <h2>الخدمات التي أقدمها</h2>
+          <p>خدمات تطوير ويب مناسبة للأفراد، الشركات، والمتاجر الناشئة.</p>
+        </div>
+
+        <div class="cards-grid services-grid">
+          <article class="service-card glass-card reveal">
+            <div class="service-icon" aria-hidden="true">✦</div>
+            <h3>تصميم مواقع تعريفية</h3>
+            <p>تصميم صفحات احترافية للشركات والأشخاص مع تجربة استخدام واضحة ومتجاوبة.</p>
+          </article>
+
+          <article class="service-card glass-card reveal">
+            <div class="service-icon" aria-hidden="true">⌘</div>
+            <h3>تطوير Frontend</h3>
+            <p>تحويل التصاميم إلى صفحات HTML/CSS/JS متوافقة مع جميع الشاشات.</p>
+          </article>
+
+          <article class="service-card glass-card reveal">
+            <div class="service-icon" aria-hidden="true">◇</div>
+            <h3>برمجة Backend</h3>
+            <p>بناء وظائف ديناميكية مثل تسجيل الدخول، قواعد البيانات، النماذج، ولوحات التحكم.</p>
+          </article>
+
+          <article class="service-card glass-card reveal">
+            <div class="service-icon" aria-hidden="true">▣</div>
+            <h3>لوحات تحكم</h3>
+            <p>إنشاء Admin Panel لإدارة المحتوى، المستخدمين، الرسائل، والمشاريع بسهولة.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-card glass-card reveal">
+          <div>
+            <span class="eyebrow">Let’s Work Together</span>
+            <h2>هل لديك فكرة موقع؟</h2>
+            <p>أستطيع مساعدتك في تحويل فكرتك إلى موقع احترافي، سريع، ومتجاوب.</p>
+          </div>
+          <a href="contact.html" class="btn btn-primary">ابدأ مشروعك</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo footer-logo">
+          <span class="logo-mark">AG</span>
+          <span class="logo-text">Portfolio</span>
+        </a>
+        <p>Portfolio شخصي بتصميم Liquid Glass لعرض المشاريع والخدمات بشكل احترافي.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">الرئيسية</a>
+        <a href="#projects">المشاريع</a>
+        <a href="#services">الخدمات</a>
+        <a href="contact.html">تواصل معي</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© <span id="year"></span> Ahmad Ghanem. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
