@@ -13,7 +13,7 @@ const translations = {
     page: { indexTitle: 'Ahmad Ghanem | Web Developer Portfolio', contactTitle: 'تواصل معي | Ahmad Ghanem', businessTitle: 'AG Solution | خدمات تطوير مواقع' },
     meta: { description: 'Portfolio احترافي لمبرمج ومطور مواقع', contactDescription: 'تواصل مع أحمد غانم لتطوير مواقع الويب', businessDescription: 'AG Solution تقدم حلول تصميم وتطوير مواقع ويب احترافية' },
     common: { skip: 'تخطي إلى المحتوى الرئيسي', switchTheme: 'تبديل الوضع الليلي والنهاري', switchLanguage: 'تبديل اللغة' },
-    nav: { aria: 'القائمة الرئيسية', homeAria: 'الانتقال إلى الصفحة الرئيسية', open: 'فتح القائمة', home: 'الرئيسية', about: 'من أنا', skills: 'المهارات', projects: 'المشاريع', services: 'الخدمات', business: 'AG Solution', contact: 'تواصل معي' },
+    nav: { aria: 'القائمة الرئيسية', homeAria: 'الانتقال إلى الصفحة الرئيسية', open: 'فتح القائمة', home: 'الرئيسية', about: 'من أنا', career: 'المسيرة المهنية', skills: 'المهارات', projects: 'المشاريع', services: 'الخدمات', business: 'AG Solution', contact: 'تواصل معي' },
     hero: { eyebrow: 'مهندس برمجيات ومطور مواقع ويب', title: 'أبني مواقع احترافية بتصميم عصري وتجربة استخدام عالية.', text: 'أنا أحمد غانم، مطور مواقع أعمل على بناء واجهات متجاوبة، مواقع أعمال، لوحات تحكم، وأنظمة ويب عملية باستخدام HTML, CSS, JavaScript, PHP و MySQL.', projectsBtn: 'شاهد مشاريعي', cvBtn: 'تحميل السيرة الذاتية', contactBtn: 'تواصل معي', statsAria: 'إحصائيات مختصرة', statProjects: 'مشاريع', statServices: 'خدمات', imageAria: 'صورة شخصية لأحمد غانم', imagePlaceholder: 'ضع صورتك هنا' },
     about: { eyebrow: 'عَنّي', title: 'من أنا؟', text: 'أنا أحمد غانم، مهندس برمجيات ومطور مواقع ويب. حاصل على دبلوم دولي في هندسة البرمجيات من كلية عبد العزيز الغرير للحوسبة المتقدمة (ASAC)، وبكالوريوس في هندسة البرمجيات من جامعة الزيتونة الأردنية. أعمل على بناء مواقع إلكترونية حديثة ومتجاوبة، مع التركيز على كتابة كود نظيف، تصميم احترافي، وتجربة استخدام واضحة.', skillsAria: 'المهارات التقنية' },
 education: {
@@ -35,6 +35,15 @@ education: {
   grade: "التقدير:",
   noDate: "الدبلوم"
 },
+
+    career: {
+      eyebrow: 'المسيرة المهنية', title: 'الخبرات المهنية',
+      date1: 'نوفمبر 2024 - حتى الآن', role1: 'الدعم الفني لتكنولوجيا المعلومات ومشرف المختبرات', company1: 'كلية لومينوس الجامعية التقنية',
+      date2: 'أغسطس 2024 - أكتوبر 2024', role2: 'مرشد أكاديمي BTEC',
+      date3: 'أبريل 2022 - حتى الآن', role3: 'مطور مواقع ويب', company3: 'عمل حر - ',
+      date4: 'أكتوبر 2023 - ديسمبر 2023', role4: 'تطوير الاستراتيجية والأداء المؤسسي', company4: 'ECO Consult',
+      date5: 'يناير 2022 - أغسطس 2022', role5: 'موظف مبيعات', company5: 'شركة زين'
+    },
     skills: { eyebrow: 'المهارات والخبرات', title: 'المهارات والخبرات', text1: 'أمتلك خبرة عملية في تطوير واجهات الويب وبناء مواقع ديناميكية متجاوبة، مع التركيز على كتابة كود نظيف، أداء سريع، وتجربة استخدام واضحة.', text2: 'أعمل على تحويل الأفكار إلى مواقع حقيقية باستخدام تقنيات Frontend و Backend، وأستطيع بناء صفحات تعريفية، أنظمة حجز، لوحات تحكم، ونماذج تواصل قابلة للتطوير.', expAria: 'ملخص الخبرات', orbitAria: 'قائمة مهارات تقنية' },
     projects: { eyebrow: 'مشاريعي', title: 'المشاريع التي بنيتها', subtitle: 'يمكنك تعديل أسماء المشاريع والصور والروابط لاحقاً حسب أعمالك الفعلية.', imageAria: 'مكان صورة مشروع', imagePlaceholder: 'صورة المشروع', p1: 'نظام حجز صالونات يحتوي على تسجيل دخول، خدمات، مواعيد، ولوحة تحكم للإدارة.', p2: 'موقع شركة مع إعلانات، أعضاء الفريق، رسائل تواصل، وصلاحيات Admin / Editor.', p3: 'موقع شخصي احترافي لعرض المهارات، المشاريع، الخدمات، ومعلومات التواصل.', view: 'عرض المشروع' },
     services: { eyebrow: 'الخدمات', title: 'الخدمات التي أقدمها', subtitle: 'خدمات تطوير ويب مناسبة للأفراد، الشركات، والمتاجر الناشئة.', s1Title: 'تصميم مواقع تعريفية', s1Text: 'تصميم صفحات احترافية للشركات والأشخاص مع تجربة استخدام واضحة ومتجاوبة.', s2Title: 'تطوير Frontend', s2Text: 'تحويل التصاميم إلى صفحات HTML/CSS/JS متوافقة مع جميع الشاشات.', s3Title: 'برمجة Backend', s3Text: 'بناء وظائف ديناميكية مثل تسجيل الدخول، قواعد البيانات، النماذج، ولوحات التحكم.', s4Title: 'لوحات تحكم', s4Text: 'إنشاء Admin Panel لإدارة المحتوى، المستخدمين، الرسائل، والمشاريع بسهولة.' },
@@ -47,7 +56,7 @@ education: {
     page: { indexTitle: 'Ahmad Ghanem | Web Developer Portfolio', contactTitle: 'Contact Me | Ahmad Ghanem', businessTitle: 'AG Solution | Web Development Services' },
     meta: { description: 'Professional portfolio for a programmer and web developer', contactDescription: 'Contact Ahmad Ghanem for web development projects', businessDescription: 'AG Solution provides professional web design and development services' },
     common: { skip: 'Skip to main content', switchTheme: 'Switch dark and light mode', switchLanguage: 'Switch language' },
-    nav: { aria: 'Main navigation', homeAria: 'Go to homepage', open: 'Open menu', home: 'Home', about: 'About', skills: 'Skills', projects: 'Projects', services: 'Services', business: 'AG Solution', contact: 'Contact Me' },
+    nav: { aria: 'Main navigation', homeAria: 'Go to homepage', open: 'Open menu', home: 'Home', about: 'About', career: 'Career', skills: 'Skills', projects: 'Projects', services: 'Services', business: 'AG Solution', contact: 'Contact Me' },
     hero: { eyebrow: 'Software Engineer & Web Developer', title: 'I build professional websites with modern design and strong user experience.', text: 'I am Ahmad Ghanem, a web developer focused on responsive interfaces, business websites, admin dashboards, and practical web systems using HTML, CSS, JavaScript, PHP, and MySQL.', projectsBtn: 'View Projects', cvBtn: 'Download CV', contactBtn: 'Contact Me', statsAria: 'Quick statistics', statProjects: 'Projects', statServices: 'Services', imageAria: 'Profile photo of Ahmad Ghanem', imagePlaceholder: 'Place your photo here' },
     about: { eyebrow: 'About Me', title: 'Who am I?', text: 'I am Ahmad Ghanem, a Software Engineer and Web Developer. I hold a Higher Diploma in Software Engineering from Abdul Aziz Al Ghurair School of Advanced Computing (ASAC), and a Bachelor\'s degree in Software Engineering from Al-Zaytoonah University of Jordan. I build modern, responsive websites with clean code, professional design, and a clear user experience.', skillsAria: 'Technical skills' },
 education: {
@@ -69,6 +78,15 @@ education: {
   grade: "Grade:",
   noDate: "Diploma"
 },
+
+    career: {
+      eyebrow: 'Career', title: 'Professional Experience',
+      date1: 'Nov 2024 - Present', role1: 'IT Technical Support and Lab Supervisor', company1: 'Luminus Technical University College',
+      date2: 'Aug 2024 - Oct 2024', role2: 'BTEC Academic Advisor',
+      date3: 'Apr 2022 - Present', role3: 'Web Developer', company3: 'Freelancer – AG Solution',
+      date4: 'Oct 2023 - Dec 2023', role4: 'Strategy Development and Organizational Performance', company4: 'ECO Consult',
+      date5: 'Jan 2022 - Aug 2022', role5: 'Sales Employee', company5: 'Zain Company'
+    },
     skills: { eyebrow: 'Skills & Experience', title: 'Skills & Experience', text1: 'I have hands-on experience in developing responsive web interfaces and dynamic websites, with attention to clean code, fast performance, and clear user experience.', text2: 'I turn ideas into real websites using Frontend and Backend technologies, including landing pages, booking systems, dashboards, and scalable contact forms.', expAria: 'Experience summary', orbitAria: 'Technical skills list' },
     projects: { eyebrow: 'My Projects', title: 'Projects I Built', subtitle: 'You can edit project names, images, and links later based on your real work.', imageAria: 'Project image placeholder', imagePlaceholder: 'Project Image', p1: 'A salon booking system with login, services, appointments, and an admin dashboard.', p2: 'A company website with announcements, team members, contact messages, and Admin / Editor roles.', p3: 'A professional personal website for showcasing skills, projects, services, and contact information.', view: 'View Project' },
     services: { eyebrow: 'Services', title: 'Services I Provide', subtitle: 'Web development services for individuals, companies, and growing businesses.', s1Title: 'Business Website Design', s1Text: 'Professional pages for companies and individuals with clear and responsive user experience.', s2Title: 'Frontend Development', s2Text: 'Converting designs into HTML/CSS/JS pages compatible with all screen sizes.', s3Title: 'Backend Development', s3Text: 'Building dynamic features such as login, databases, forms, and admin dashboards.', s4Title: 'Admin Dashboards', s4Text: 'Creating admin panels to manage content, users, messages, and projects easily.' },
